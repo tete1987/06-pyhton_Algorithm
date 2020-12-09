@@ -9,7 +9,7 @@ Niklaus Wirth：“程序=数据结构+算法”
 
 ### （二）时间复杂度
 示例1：
-![image](9B913651FCA642F681B917293E2C3935)
+![时间复杂度1](https://github.com/tete1987/picture_resource/blob/master/py%E7%AE%97%E6%B3%95-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%A6%82%E5%BF%B5.png)
 
 问题：以上四组代码，哪一组运行时间最短？用什么方式来体现算法运行的快慢？
 
@@ -21,13 +21,13 @@ Niklaus Wirth：“程序=数据结构+算法”
 - 如果是较为复杂的运算，执行一次好几个小时甚至几天，对于测试其时间来说耗费的过程时间较长，因此不适宜。
 
 此处，需要引入“时间复杂度”的概念。
-![image](B4FC00F62918421FA46BF18E8E564D1A)
+![时间复杂度2](https://github.com/tete1987/picture_resource/blob/master/py%E7%AE%97%E6%B3%95-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%A6%82%E5%BF%B52.png)
 
 解析：
 - 如果将一个print 函数 的复杂度标记为 O(1)，那么一个for循环就相当于一个O(n)；
 - 那么for循环中嵌套一个for循环，那么复杂度将升高为O(n²)，以此类推。
 
-![image](11BF972D4EF244B18345FAF684E27F63)
+![时间复杂度3](https://github.com/tete1987/picture_resource/blob/master/py%E7%AE%97%E6%B3%95-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%A6%82%E5%BF%B52.png)
 
 注：此处标记的“1”为一个单位，并非一个数字，所以不论是print 三次还是十次，复杂度均不会上升，如下图：
 
