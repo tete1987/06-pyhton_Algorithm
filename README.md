@@ -34,7 +34,7 @@ Niklaus Wirth：“程序=数据结构+算法”
 
 示例2:
 
-![image](F965765143864B67985E09E7BCCE70B3)
+![时间复杂度4](https://github.com/tete1987/picture_resource/blob/master/py%E7%AE%97%E6%B3%95-%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%A6%82%E5%BF%B54.png)
 
 如果循环当中出现折半的情况，则时间复杂度以对数形式展现。
 
@@ -78,7 +78,7 @@ Niklaus Wirth：“程序=数据结构+算法”
 1）调用自身
 
 2）结束条件
-![image](3717D03FE5BD455D825022A85263831A)
+![递归](https://github.com/tete1987/picture_resource/blob/master/%E9%80%92%E5%BD%92.png)
 
 
 上图中正确的递归函数为：func3 和 func4 。
@@ -86,10 +86,11 @@ Niklaus Wirth：“程序=数据结构+算法”
   - func3的输出结果为：3，2，1
   - func4 的输出结果为：1，2，3
   
-![image](4B70EDB80789471BB4A77A8B1C260910)
+![递归解析](https://github.com/tete1987/picture_resource/blob/master/%E9%80%92%E5%BD%92%E6%89%93%E5%8D%B0%E8%A7%A3%E6%9E%90.png)
 
 2.递归实例：汉诺塔问题
-![image](77D6A62125F7484BB982434E8669E8D3)
+
+![汉诺塔实例](https://github.com/tete1987/picture_resource/blob/master/%E6%B1%89%E8%AF%BA%E5%A1%94%E5%AE%9E%E4%BE%8B.png)
 
 解析：
 
