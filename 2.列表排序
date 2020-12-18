@@ -1,0 +1,55 @@
+# 二、列表排序
+## （一）什么是列表排序
+1）排序：将一组“无序”的记录序列调整为“有序”的记录序列。 
+
+2）列表排序：将无序列表变为有序列表
+- ①输入：列表
+- ②输出：有序列表
+- 
+3）升序与降序
+
+4）内置排序函数：sort()
+
+## （二）常见排序——冒泡排序
+1.冒泡排序（Bubble Sort）概念：
+- 列表每两个相邻的数，如果前面比后面大，则交换这两个数
+- 一趟排序完成后，则无序区减少一个数，有序区增加一个数。
+- 代码关键点：趟、无序区范围
+
+2.代码示例：
+
+1）基础版：
+```
+def bubble_sort(li):
+    for i in range(len(li)-1):
+        for j in range(len(li)-i-1):
+            if li[j]> li[j+1]:
+                li[j],li[j+1]=li[j+1],li[j]
+        print(li)
+
+li = [4,7,8,9,3]
+print(li)
+bubble_sort(li)
+print(li)
+```
+时间复杂度为 O(n²)
+
+2）基础版的算法是无论发不发生转换，都要将列表全部遍历一遍直到所有数都遍历完成，所以需要优化一下，在列表已经是有序状态时遍历自动停止，即如果一趟排序没有发生交换，则说明列表已经有序，可以直接结束算法：
+```
+def bubble_sort(li):
+    for i in range(len(li)-1):
+        exchange = False
+        for j in range(len(li)-i-1):
+            if li[j]>li[j+1]:
+                li[j],li[j+1]=li[j+1],li[j]
+                exchange =True
+        print(li)
+        if not exchange:
+            return
+
+li = [1,2,4,7,8,9,3]
+print(li)
+bubble_sort(li)
+print(li)
+
+```
